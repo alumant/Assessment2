@@ -2,6 +2,8 @@ package asse;
 
 import java.util.Scanner;
 
+import java.util.Scanner;
+
 public class Assess {
     public static void main(String[] args) {
 
@@ -13,14 +15,15 @@ public class Assess {
         System.out.println(isSixtyFive(num1, num2));
     }
 
-     static boolean isSixtyFive(int num1, int num2) {
-
-
-            return num1 == 65 || num2 == 65 || (num1 + num2 == 65);
-
+    static boolean isSixtyFive(int num1, int num2) {
+        if (num1 == 65 || num2 == 65 || (num1 + num2 == 65)) {
+            return true;
+        } else {
+            return false;
+        }
     }
-
 }
+
 
 
 
